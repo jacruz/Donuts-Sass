@@ -1,0 +1,8 @@
+@mixin btnCustom($color, $bkgColor){
+    border: 2px solid $bkgColor;
+    color: $color;
+    background-color: $bkgColor;
+    padding: 0.4em 1.5em;
+    border-radius: 10px;
+    text-align: center;
+}
