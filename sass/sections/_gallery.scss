@@ -1,0 +1,22 @@
+.s-gallery{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: $pink-opaque-2;
+
+    &-img{
+        flex: 0 1 50%;
+        margin: auto;
+        img {
+            max-width:100%;
+        }
+    }
+}
+
+
+/* Media Query */
+@media (max-width: 600px) {
+    .s-gallery{
+        flex-flow: column;
+    }
+}

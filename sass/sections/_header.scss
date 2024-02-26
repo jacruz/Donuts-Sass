@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+    
+    background-image: url('../assets/images/donut-6-opaque.jpeg');
+    background-size: cover;
+    background-position: top;
+
+    .logo{
+        flex: 0 1 30%;
+        padding: 10px 0 0 2em;
+        color: $white;
+        font-size: $font-xl;
+    }
+
+    nav{
+        flex: 0 1 60%;
+        padding: 15px 2em 15px 0;
+        text-align: right;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: end;
+        li {
+            a {
+                margin: 1rem 1.5rem;
+            }
+        }
+    }
+
+    .fa-bars {
+        padding: 5px 0;
+        color: $white;
+        font-size: $font-lg;
+        cursor: pointer;
+        display: none;
+    }
+
+    .show-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a:hover {
+        transition: all 0.4s;
+    }
+
+    .banner{
+        text-align: center;
+        h1{
+            font-size: $font-xxxl;
+        }
+        h2{
+            font-size: $font-lg;
+            font-weight: 500;
+        }
+    }
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+
+header{
+    justify-content: space-between;
+    nav{
+        flex: 0 1 50%;
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            background-color: $white;
+            position: absolute;
+            right: 0;    
+            top: 10%;    
+            height: 90%;
+            width: 100%;
+            padding: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
+            li {
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+    } 
+
+    .fa-bars {
+        display: block;
+    }
+
+    .banner{
+        text-align: center;
+        margin: 0 auto;
+        h1{
+            font-size: $font-xxl;
+        }
+        h2{
+            font-size: $font-md;
+            font-weight: 500;
+        }
+    }
+}
+
+}

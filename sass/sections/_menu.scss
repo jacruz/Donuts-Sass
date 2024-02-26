@@ -1,0 +1,16 @@
+.s-menu{
+    display: flex;
+    flex-flow: column;
+    padding: 10em 1em;
+    text-align: center;
+    .btn-1{
+        margin: 20px auto;
+    }
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .s-menu{
+        padding: 10em 1em;
+    }
+}

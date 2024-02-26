@@ -1,0 +1,25 @@
+.s-social-instagram{
+    display: flex;
+    flex-flow: column;
+    padding: 8em 0 5em;
+    text-align: center;
+    &-gallery{
+        padding: 2em 8em;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+/* Media Query */
+@media (max-width: 600px) {
+    .s-social-instagram{
+        &-gallery{
+            padding: 2em 3em;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+        }
+    }
+}
